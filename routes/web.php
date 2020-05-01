@@ -19,7 +19,7 @@ Route::get('payments/paypal/express-checkout', 'PayPalController@getExpressCheck
 
 Route::get('firebase/sw-js','AppSettingController@initFirebase');
 
-Route::get('login/{service}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{service}', 'Auth\LoginController@redirectToProvider');//
 Route::get('login/{service}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Route::get('storage/app/public/{id}/{conversion}/{filename?}', 'UploadController@storage');
