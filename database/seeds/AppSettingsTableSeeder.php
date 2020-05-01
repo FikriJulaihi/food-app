@@ -333,7 +333,7 @@ class AppSettingsTableSeeder extends Seeder
             array (
                 'id' => 126,
                 'key' => 'app_version',
-                'value' => '1.9.4',
+                'value' => '1.9.0',
             ),
             53 => 
             array (
