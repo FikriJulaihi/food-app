@@ -36,7 +36,7 @@ Route::middleware('auth')->group(function () {
         Route::get('uploads/collectionsNames', 'UploadController@collectionsNames');
         Route::post('uploads/clear', 'UploadController@clear')->name('medias.delete');
         Route::get('medias', 'UploadController@index')->name('medias');
-        Route::get('uploads/clear-all', 'UploadController@clearAll');
+        Route::get('uploads/clear-all', 'UploadController@clearAll'); //CHANGESTEST
     });
 
     Route::group(['middleware' => ['permission:permissions.edit']], function () {
